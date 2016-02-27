@@ -1,0 +1,23 @@
+<div class="boxmenu" ng-controller="BoxMenuController">
+
+  <koa-toolbar>
+    <koa-icon-button icon="{{boxmenu.icon}}" ng-click="showMenu()"></koa-icon-button>
+    <img id="logo" ng-src="{{boxmenu.modulescope.logo}}" ng-if="boxmenu.modulescope.logo">
+    <span class="title" ng-if="boxmenu.modulescope.title">{{toolbar.title}}</span>
+  </koa-toolbar>
+
+  <div id="menu" ng-class="boxmenu.shown ? 'shown' : ''">
+    <koa-grid columns="{{boxmenu.modulescope.columns}}">
+      <a href="{{module.url}}" ng-repeat="module in boxmenu.modules">
+        <koa-icon icon="{{module.icon}}" ng-if="module.icon" class="icon"></koa-icon>
+        <div>{{module.text}}</div>
+      </a>
+    </koa-grid>
+  </div>
+
+  <div id="main">
+    <!-- moduleIdentifier + Template -->
+    <div ng-include="boxmenuTemplate"></div>
+  </div>
+
+</div>
