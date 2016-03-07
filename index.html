@@ -7,8 +7,8 @@
   </koa-toolbar>
 
   <div id="menu" ng-class="boxmenu.shown ? 'shown' : ''">
-    <div class="close">
-      <koa-icon-button icon="close" ng-click="showMenu()"></koa-icon-button>
+    <div class="close-container">
+      <koa-icon-button icon="close" class="close-button" ng-click="showMenu()"></koa-icon-button>
     </div>
     <koa-grid columns="{{boxmenu.modulescope.columns}}">
       <a href="{{module.url}}" style="background-image: url('{{module.backgroundImage}}'); background-color: {{module.backgroundColor}};" ng-repeat="module in boxmenu.modules">

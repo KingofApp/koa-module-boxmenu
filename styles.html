@@ -26,6 +26,8 @@
     z-index: 9;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
 
     display: none;
 
@@ -57,7 +59,10 @@
     margin-bottom: .8em;
   }
 
-  .boxmenu #menu .close {
-    text-align: right;
+  .boxmenu #menu .close-container {
+    @apply(--layout);
+    @apply(--layout-flex);
+    @apply(--layout-end);
+    @apply(--layout-end-justified);
   }
 </style>
