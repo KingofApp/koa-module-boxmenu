@@ -10,9 +10,7 @@
     <div class="close-container">
       <koa-icon-button icon="close" class="close-button" ng-click="showMenu()"></koa-icon-button>
     </div>
-    <div id="header" ng-if="boxmenu.modulescope.headerShown"
-      ng-class="[boxmenu.modulescope.headerAlignment, boxmenu.modulescope.headerReverse ? 'reverse' : '']"
-      style="background-image: url('{{boxmenu.modulescope.headerBackgroundImage}}'); background-color: {{boxmenu.modulescope.headerBackgroundColor}};">
+    <div id="header" ng-if="boxmenu.modulescope.headerShown" ng-class="[boxmenu.modulescope.headerAlignment, boxmenu.modulescope.headerReverse ? 'reverse' : '']" style="background-image: url('{{boxmenu.modulescope.headerBackgroundImage}}'); background-color: {{boxmenu.modulescope.headerBackgroundColor}};">
       <div class="logo" ng-if="boxmenu.modulescope.headerLogoShown">
         <img ng-src="{{boxmenu.modulescope.headerLogo}}">
       </div>
