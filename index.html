@@ -2,8 +2,8 @@
 
   <koa-toolbar>
     <koa-icon-button icon="{{boxmenu.icon}}" ng-click="showMenu()"></koa-icon-button>
-    <img id="logo" ng-src="{{boxmenu.modulescope.logo}}" ng-if="boxmenu.modulescope.logo">
-    <span class="title" ng-if="boxmenu.modulescope.title">{{toolbar.title}}</span>
+    <img id="logo" ng-src="{{boxmenu.modulescope.toolbarLogo}}" ng-if="boxmenu.modulescope.toolbarLogo">
+    <span class="title" ng-if="boxmenu.modulescope.toolbarTitle">{{toolbar.title}}</span>
   </koa-toolbar>
 
   <div id="menu" ng-class="boxmenu.shown ? 'shown' : ''">

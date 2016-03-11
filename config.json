@@ -29,18 +29,9 @@
     }
   ],
   "scope": {
-    "sections": [
-      "",
-      ""
-    ],
-    "backgroundImages": [
-      "",
-      ""
-    ],
-    "backgroundColors": [
-      "",
-      ""
-    ],
+    "sections": [],
+    "backgroundImages": [],
+    "backgroundColors": [],
     "headerShown": true,
     "headerBackgroundImage": "",
     "headerBackgroundColor": "",
@@ -50,8 +41,8 @@
     "headerAlignment": "left",
     "showicons": true,
     "columns": 2,
-    "title": true,
-    "logo": ""
+    "toolbarTitle": true,
+    "toolbarLogo": ""
   },
   "config": [{
     "type": "checkbox",
