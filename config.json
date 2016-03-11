@@ -1,7 +1,8 @@
 {
   "name": "Box Menu",
   "identifier": "boxmenu",
-  "description": "",
+  "description": "Menu displayed from the bottom of the App showing the contents boxy. It incorporates a header with logo and name (optional).",
+  "descriptionShort": "dropdown large buttons",
   "documentation": "",
   "type": "A",
   "icon": "menu",
@@ -63,5 +64,4 @@
       "label": "Menu icons"
     }
   }],
-  "descriptionShort": ""
 }
