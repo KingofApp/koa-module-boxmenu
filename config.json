@@ -15,10 +15,10 @@
   },
   "requires": [],
   "canContain": true,
-  "view": "modules/koa-module-boxmenu/index.html",
+  "view": "modules/boxmenu/index.html",
   "files": [
-    "modules/koa-module-boxmenu/controller.js",
-    "modules/koa-module-boxmenu/styles.html"
+    "modules/boxmenu/controller.js",
+    "modules/boxmenu/styles.html"
   ],
   "libs": [
     {
