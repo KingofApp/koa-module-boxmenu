@@ -16,17 +16,16 @@
   "requires": [],
   "canContain": true,
   "view": "modules/koa-module-boxmenu/index.html",
-  "files": ["modules/koa-module-boxmenu/controller.js"],
+  "files": [
+    "modules/koa-module-boxmenu/controller.js",
+    "modules/koa-module-boxmenu/styles.html"
+  ],
   "libs": [
     {
       "bower": {
         "PolymerElements/iron-flex-layout": "^1.3.0"
       },
-      "src": "../bower_components/iron-flex-layout/iron-flex-layout.html"
-    },
-    {
-      "bower": "",
-      "src":"modules/koa-module-boxmenu/styles.html"
+      "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
     }
   ],
   "scope": {
