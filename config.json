@@ -44,12 +44,136 @@
     "toolbarTitle": true,
     "toolbarLogo": ""
   },
-  "config": [{
-    "type": "checkbox",
-    "key": "showicons",
-    "templateOptions": {
-      "description": "Show menu icons",
-      "label": "Menu icons"
+  "config": [
+    {
+      "key": "sections",
+      "type": "multiInput",
+      "templateOptions": {
+        "label": "Sections",
+        "inputOptions": {
+          "type": "select",
+          "templateOptions": {
+            "options": [],
+            "label": "Normal Select"
+          }
+        }
+      }
+    },
+    {
+      "key": "backgroundImages",
+      "type": "multiInput",
+      "templateOptions": {
+        "inputOptions": {
+          "type": "input"
+        },
+        "label": "Background image URLs",
+        "pattern": "(https?://)([/\\w.()-]*).*"
+      }
+    },
+    {
+      "key": "backgroundColors",
+      "type": "multiInput",
+      "templateOptions": {
+        "inputOptions": {
+          "type": "input"
+        },
+        "label": "Background colors"
+      }
+    },
+    {
+      "key": "headerShown",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Header",
+        "description": "Show header"
+      }
+    },
+    {
+      "key": "headerBackgroundImage",
+      "type": "input",
+      "templateOptions": {
+        "label": "Header image",
+        "description": "The URL of the header background image",
+        "pattern": "(https?://)([/\\w.()-]*).*"
+      }
+    },
+    {
+      "key": "headerBackgroundColor",
+      "type": "input",
+      "templateOptions": {
+        "label": "Header color",
+        "description": "The header background color"
+      }
+    },
+    {
+      "key": "headerReverse",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Header reverse",
+        "description": "Reverse order of logo and title"
+      }
+    },
+    {
+      "key": "headerTitle",
+      "type": "input",
+      "templateOptions": {
+        "label": "Header title",
+        "description": "The header title"
+      }
+    },
+    {
+      "key": "headerLogo",
+      "type": "input",
+      "templateOptions": {
+        "label": "Header logo",
+        "description": "The URL of the header logo image",
+        "pattern": "(https?://)([/\\w.()-]*).*"
+      }
+    },
+    {
+      "key": "headerAlignment",
+      "type": "select",
+      "templateOptions": {
+        "label": "Header alignment",
+        "options": [
+          {"name": "left", "value": "left"},
+          {"name": "center", "value": "center"},
+          {"name": "right", "value": "right"}
+        ]
+      }
+    },
+    {
+      "key": "showicons",
+      "type": "checkbox",
+      "templateOptions": {
+        "description": "Show menu icons",
+        "label": "Menu icons"
+      }
+    },
+    {
+      "key": "columns",
+      "type": "input",
+      "templateOptions": {
+        "label": "Columns",
+        "description": "Number of columns"
+      }
+    },
+    {
+      "key": "toolbarTitle",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Toolbar title",
+        "description": "Show the toolbar title"
+      }
+    },
+    {
+      "key": "toolbarLogo",
+      "type": "input",
+      "templateOptions": {
+        "label": "Toolbar logo",
+        "description": "The URL of the toolbar logo image",
+        "pattern": "(https?://)([/\\w.()-]*).*"
+      }
     }
-  }],
+  ]
 }
