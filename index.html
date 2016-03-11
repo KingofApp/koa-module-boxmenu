@@ -11,10 +11,10 @@
       <koa-icon-button icon="close" class="close-button" ng-click="showMenu()"></koa-icon-button>
     </div>
     <div id="header" ng-if="boxmenu.modulescope.headerShown" ng-class="[boxmenu.modulescope.headerAlignment, boxmenu.modulescope.headerReverse ? 'reverse' : '']" style="background-image: url('{{boxmenu.modulescope.headerBackgroundImage}}'); background-color: {{boxmenu.modulescope.headerBackgroundColor}};">
-      <div class="logo" ng-if="boxmenu.modulescope.headerLogoShown">
+      <div class="logo" ng-if="boxmenu.modulescope.headerLogo">
         <img ng-src="{{boxmenu.modulescope.headerLogo}}">
       </div>
-      <span class="title" ng-if="boxmenu.modulescope.headerTitleShown">{{boxmenu.modulescope.headerTitle}}</span>
+      <span class="title" ng-if="boxmenu.modulescope.headerTitle">{{boxmenu.modulescope.headerTitle}}</span>
     </div>
     <koa-grid columns="{{boxmenu.modulescope.columns}}">
       <a href="{{module.url}}" style="background-image: url('{{module.backgroundImage}}'); background-color: {{module.backgroundColor}};" ng-repeat="module in boxmenu.modules">
