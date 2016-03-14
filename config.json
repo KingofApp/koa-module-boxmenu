@@ -1,20 +1,49 @@
 {
   "name": "Box Menu",
   "identifier": "boxmenu",
-  "description": "Menu displayed from the bottom of the App showing the contents boxy. It incorporates a header with logo and name (optional).",
-  "descriptionShort": "dropdown large buttons",
-  "documentation": "",
   "type": "A",
-  "icon": "menu",
   "version": "1.0",
   "author": "King of App",
+  "category": [
+    "menu"
+  ],
+  "platforms" : [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "price": 0,
+  "subscription": false,
+  "canContain": true,
+  "icon": "menu",
+  "description": {
+    "en-US" : "Menu displayed from the bottom of the App showing the contents boxy. It incorporates a header with logo and name (optional).",
+    "es-ES" : "Menú que se despliega desde la parte inferior de la App mostrando los contenidos en forma de caja. Incorpora cabecera con logo y nombre (opcional)."
+  },
+  "descriptionShort": {
+    "en-US" : "dropdown large buttons",
+    "es-ES" : "Menú desplegable de botones grandes"
+  },
+  "documentation": {
+    "en-US" : "",
+    "es-ES" : ""
+  },
+  "images" : {
+    "list" : "images/list.png",
+    "screenshots" : [
+      "images/screenshot01.png",
+      "images/screenshot02.png"
+    ],
+    "popover" : "images/popover.png",
+    "banner" : "images/banner.png",
+    "logo" : "images/logo.png"
+  },
   "showOn": {
     "menu": false,
     "market": true,
     "dragDrop": true
   },
   "requires": [],
-  "canContain": true,
   "view": "modules/boxmenu/index.html",
   "files": [
     "modules/boxmenu/controller.js",
