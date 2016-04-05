@@ -26,10 +26,12 @@
     z-index: 9;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
 
     display: none;
 
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   .boxmenu #menu.shown {
@@ -47,6 +49,7 @@
 
     color: inherit;
     background-color: var(--primary-background-color);
+    background-size: cover;
   }
 
   .boxmenu #menu .icon {
@@ -54,5 +57,39 @@
     --iron-icon-height: 2.4em;
 
     margin-bottom: .8em;
+  }
+
+  .boxmenu #menu .close-container {
+    @apply(--layout);
+    @apply(--layout-flex);
+    @apply(--layout-end);
+    @apply(--layout-end-justified);
+  }
+
+  .boxmenu #menu #header {
+    @apply(--layout-vertical);
+
+    background-color: #FFFFFF;
+    padding: 1em;
+  }
+
+  .boxmenu #menu #header.reverse {
+    @apply(--layout-vertical-reverse);
+  }
+
+  .boxmenu #menu #header.left {
+    @apply(--layout-start);
+  }
+
+  .boxmenu #menu #header.center {
+    @apply(--layout-center);
+  }
+
+  .boxmenu #menu #header.right {
+    @apply(--layout-end);
+  }
+
+  .boxmenu #menu #header .logo img {
+    max-height: 60px;
   }
 </style>

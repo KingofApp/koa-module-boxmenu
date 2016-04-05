@@ -1,39 +1,208 @@
 {
   "name": "Box Menu",
   "identifier": "boxmenu",
-  "description": "",
-  "documentation": "",
   "type": "A",
-  "icon": "menu",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": "King of App",
+  "category": [
+    "menu"
+  ],
+  "platforms" : [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "price": 0,
+  "subscription": false,
+  "canContain": true,
+  "icon": "menu",
+  "description": {
+    "en-US" : "Menu displayed from the bottom of the App showing the contents boxy. It incorporates a header with logo and name (optional).",
+    "es-ES" : "Menú que se despliega desde la parte inferior de la App mostrando los contenidos en forma de caja. Incorpora cabecera con logo y nombre (opcional)."
+  },
+  "descriptionShort": {
+    "en-US" : "dropdown large buttons",
+    "es-ES" : "Menú desplegable de botones grandes"
+  },
+  "documentation": {
+    "en-US" : "",
+    "es-ES" : ""
+  },
+  "images" : {
+    "list" : "modules/boxmenu/images/list.png",
+    "screenshots" : [
+      "modules/boxmenu/images/screenshot01.png",
+      "modules/boxmenu/images/screenshot02.png"
+    ],
+    "popover" : "modules/boxmenu/images/popover.png",
+    "banner" : "modules/boxmenu/images/banner.png",
+    "logo" : "modules/boxmenu/images/logo.png"
+  },
   "showOn": {
     "menu": false,
     "market": true,
     "dragDrop": true
   },
   "requires": [],
-  "canContain": true,
-  "view": "modules/koa-module-boxmenu/index.html",
-  "files": ["modules/koa-module-boxmenu/controller.js"],
-  "libs": [{
-    "bower": "",
-    "src":"modules/koa-module-boxmenu/styles.html"
-  }],
-  "scope": {
-    "path": "",
-    "showicons": true,
-    "columns": 3,
-    "title": true,
-    "logo": ""
-  },
-  "config": [{
-    "type": "checkbox",
-    "key": "showicons",
-    "templateOptions": {
-      "description": "Show menu icons",
-      "label": "Menu icons"
+  "view": "modules/boxmenu/index.html",
+  "files": [
+    "modules/boxmenu/controller.js",
+    "modules/boxmenu/styles.html"
+  ],
+  "libs": [
+    {
+      "bower": {
+        "PolymerElements/iron-flex-layout": "^1.3.0"
+      },
+      "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
     }
-  }],
-  "descriptionShort": ""
+  ],
+  "scope": {
+    "sections": [],
+    "backgroundImages": [],
+    "backgroundColors": [],
+    "headerShown": true,
+    "headerBackgroundImage": "",
+    "headerBackgroundColor": "",
+    "headerReverse": false,
+    "headerTitle": "",
+    "headerLogo": "",
+    "headerAlignment": "left",
+    "showicons": true,
+    "columns": 2,
+    "toolbarTitle": true,
+    "toolbarLogo": ""
+  },
+  "config": [
+    {
+      "key": "sections",
+      "type": "multiInput",
+      "templateOptions": {
+        "label": "Sections",
+        "inputOptions": {
+          "type": "select",
+          "templateOptions": {
+            "options": [],
+            "label": "Normal Select"
+          }
+        }
+      }
+    },
+    {
+      "key": "backgroundImages",
+      "type": "multiInput",
+      "templateOptions": {
+        "inputOptions": {
+          "type": "input"
+        },
+        "label": "Background image URLs",
+        "pattern": "(https?://)([/\\w.()-]*).*"
+      }
+    },
+    {
+      "key": "backgroundColors",
+      "type": "multiInput",
+      "templateOptions": {
+        "inputOptions": {
+          "type": "input"
+        },
+        "label": "Background colors"
+      }
+    },
+    {
+      "key": "headerShown",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Header",
+        "description": "Show header"
+      }
+    },
+    {
+      "key": "headerBackgroundImage",
+      "type": "input",
+      "templateOptions": {
+        "label": "Header image",
+        "description": "The URL of the header background image",
+        "pattern": "(https?://)([/\\w.()-]*).*"
+      }
+    },
+    {
+      "key": "headerBackgroundColor",
+      "type": "input",
+      "templateOptions": {
+        "label": "Header color",
+        "description": "The header background color"
+      }
+    },
+    {
+      "key": "headerReverse",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Header reverse",
+        "description": "Reverse order of logo and title"
+      }
+    },
+    {
+      "key": "headerTitle",
+      "type": "input",
+      "templateOptions": {
+        "label": "Header title",
+        "description": "The header title"
+      }
+    },
+    {
+      "key": "headerLogo",
+      "type": "input",
+      "templateOptions": {
+        "label": "Header logo",
+        "description": "The URL of the header logo image",
+        "pattern": "(https?://)([/\\w.()-]*).*"
+      }
+    },
+    {
+      "key": "headerAlignment",
+      "type": "select",
+      "templateOptions": {
+        "label": "Header alignment",
+        "options": [
+          {"name": "left", "value": "left"},
+          {"name": "center", "value": "center"},
+          {"name": "right", "value": "right"}
+        ]
+      }
+    },
+    {
+      "key": "showicons",
+      "type": "checkbox",
+      "templateOptions": {
+        "description": "Show menu icons",
+        "label": "Menu icons"
+      }
+    },
+    {
+      "key": "columns",
+      "type": "input",
+      "templateOptions": {
+        "label": "Columns",
+        "description": "Number of columns"
+      }
+    },
+    {
+      "key": "toolbarTitle",
+      "type": "checkbox",
+      "templateOptions": {
+        "label": "Toolbar title",
+        "description": "Show the toolbar title"
+      }
+    },
+    {
+      "key": "toolbarLogo",
+      "type": "input",
+      "templateOptions": {
+        "label": "Toolbar logo",
+        "description": "The URL of the toolbar logo image",
+        "pattern": "(https?://)([/\\w.()-]*).*"
+      }
+    }
+  ]
 }
