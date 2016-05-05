@@ -10,11 +10,18 @@
   function BoxMenuController($scope, $rootScope, $location, structureService) {
     // Register upper level modules
     structureService.registerModule($location, $scope, 'boxmenu');
+    $scope.showBack = false;
+    if(structureService.getMenuItems().indexOf($location.$$path) === -1 && $rootScope.current != 'boxmenu'){
+      $scope.showBack = true;
+    }
+    $scope.goBack = function() {
+      window.history.back()
+    };
 
     var moduleScope = $scope.boxmenu;
     var moduleConfig = $scope.boxmenu.modulescope;
 
-    $scope.showMenu = function() {
+    $scope.showBoxMenu = function() {
       moduleScope.shown = moduleScope.shown ? false : true;
     }
 

@@ -1,16 +1,18 @@
 <style is="custom-style">
   .boxmenu {
     @apply(--layout-vertical);
-    @apply(--layout-fullbleed);
+    /*@apply(--layout-fullbleed);*/
+    height:100%;
   }
 
   .boxmenu #logo {
     max-height: 30px;
   }
 
-  .boxmenu #main {
+  .boxmenu > #main {
     @apply(--layout-vertical);
-    @apply(--layout-flex);
+    height: 100%;
+    width: 100%;
 
     position: relative;
 
@@ -21,7 +23,7 @@
     min-height: 0;
   }
 
-  .boxmenu #menu {
+  .boxmenu > #menu {
     position: fixed;
     z-index: 9;
     top: 0;
@@ -66,7 +68,7 @@
     @apply(--layout-end-justified);
   }
 
-  .boxmenu #menu #header {
+  .boxmenu > #menu #header {
     @apply(--layout-vertical);
 
     background-color: #FFFFFF;

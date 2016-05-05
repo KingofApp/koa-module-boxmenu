@@ -1,14 +1,15 @@
 <div class="boxmenu" ng-controller="BoxMenuController">
 
   <koa-toolbar>
-    <koa-icon-button icon="{{boxmenu.icon}}" ng-click="showMenu()"></koa-icon-button>
+    <koa-icon-button icon="{{boxmenu.icon}}" ng-if="!showBack" ng-click="showBoxMenu()"></koa-icon-button>
+    <koa-icon-button icon="arrow-back" ng-click="goBack()" ng-if="showBack"></koa-icon-button>
     <img id="logo" ng-src="{{boxmenu.modulescope.toolbarLogo}}" ng-if="boxmenu.modulescope.toolbarLogo">
     <span class="title" ng-if="boxmenu.modulescope.toolbarTitle">{{toolbar.title}}</span>
   </koa-toolbar>
 
   <div id="menu" ng-class="boxmenu.shown ? 'shown' : ''">
     <div class="close-container">
-      <koa-icon-button icon="close" class="close-button" ng-click="showMenu()"></koa-icon-button>
+      <koa-icon-button icon="close" class="close-button" ng-click="showBoxMenu()"></koa-icon-button>
     </div>
     <div id="header" ng-if="boxmenu.modulescope.headerShown" ng-class="[boxmenu.modulescope.headerAlignment, boxmenu.modulescope.headerReverse ? 'reverse' : '']" style="background-image: url('{{boxmenu.modulescope.headerBackgroundImage}}'); background-color: {{boxmenu.modulescope.headerBackgroundColor}};">
       <div class="logo" ng-if="boxmenu.modulescope.headerLogo">
