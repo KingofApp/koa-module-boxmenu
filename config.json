@@ -29,13 +29,13 @@
     "es-ES" : ""
   },
   "images" : {
-    "list" : "modules/boxmenu/images/boxmenu_banner.png",
+    "list" : "modules/boxmenu/images/boxmenu_list.png",
     "screenshots" : [
       "modules/boxmenu/images/boxmenu_screenshot01.png",
       "modules/boxmenu/images/boxmenu_screenshot02.png"
     ],
-    "popover" : "modules/boxmenu/images/popover.png",
-    "banner" : "modules/boxmenu/images/boxmenu_banner.png",
+    "popover" : "modules/boxmenu/images/boxmenu_popover.png",
+    "banner" : "modules/boxmenu/images/boxmenu_popover.png",
     "logo" : "modules/boxmenu/images/boxmenu_icon.png"
   },
   "showOn": {
