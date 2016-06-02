@@ -1,8 +1,8 @@
-{
+ {
   "name": "Box Menu",
   "identifier": "boxmenu",
   "type": "A",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "King of App",
   "category": [
     "menu"
@@ -32,7 +32,7 @@
     "list" : "modules/boxmenu/images/boxmenu_list.png",
     "screenshots" : [
       "modules/boxmenu/images/boxmenu_screenshot01.png",
-      "modules/boxmenu/images/boxmenu_screenshot02.png"
+      "modules/boxmenu/images/boxmenu_screenshot03.png"
     ],
     "popover" : "modules/boxmenu/images/boxmenu_popover.png",
     "banner" : "modules/boxmenu/images/boxmenu_popover.png",
@@ -58,10 +58,8 @@
     }
   ],
   "scope": {
-    "sections": [],
-    "backgroundImages": [],
-    "backgroundColors": [],
-    "headerShown": true,
+    "menuItems": [],
+    "headerShown": false,
     "headerBackgroundImage": "",
     "headerBackgroundColor": "",
     "headerReverse": false,
@@ -75,38 +73,33 @@
   },
   "config": [
     {
-      "key": "sections",
-      "type": "multiInput",
+      "type": "repeatSection",
+      "key": "menuItems",
       "templateOptions": {
-        "label": "Sections",
-        "inputOptions": {
+        "label": "Items",
+        "btnText": "Add another item to the menu",
+        "fields": [{
           "type": "select",
+          "key": "path",
           "templateOptions": {
-            "options": [],
-            "label": "Normal Select"
+            "label": "Path",
+            "required": true
           }
-        }
-      }
-    },
-    {
-      "key": "backgroundImages",
-      "type": "multiInput",
-      "templateOptions": {
-        "inputOptions": {
-          "type": "input"
-        },
-        "label": "Background image URLs",
-        "pattern": "(https?://)([/\\w.()-]*).*"
-      }
-    },
-    {
-      "key": "backgroundColors",
-      "type": "multiInput",
-      "templateOptions": {
-        "inputOptions": {
-          "type": "input"
-        },
-        "label": "Background colors"
+        }, {
+          "type": "input",
+          "key": "bgImage",
+          "templateOptions": {
+            "label": "Background Image URL",
+            "placeholder": "(Optional)"
+          }
+        }, {
+          "type": "input",
+          "key": "bgColor",
+          "templateOptions": {
+            "label": "Background Color",
+            "placeholder": "(Optional)"
+          }
+        }]
       }
     },
     {
