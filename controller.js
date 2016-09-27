@@ -24,6 +24,7 @@
     $scope.showBoxMenu = function() {
       moduleScope.shown = moduleScope.shown ? false : true;
     }
+    $rootScope.currentIndex = -1;
 
     moduleScope.modules = getModules();
 
@@ -32,7 +33,7 @@
 
       function processChild(value, index) {
 
-        if( (typeof($rootScope.currentIndex) === 'undefined') || ($location.path() === value.path)){
+        if( $location.path() === value.path ){
           $rootScope.currentIndex = index;
         }
 
