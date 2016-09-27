@@ -18,7 +18,7 @@
       <span class="title" ng-if="boxmenu.modulescope.headerTitle">{{boxmenu.modulescope.headerTitle}}</span>
     </div>
     <koa-grid columns="{{boxmenu.modulescope.columns}}">
-      <a href="{{module.url}}" style="background-image: url('{{module.backgroundImage}}'); background-color: {{module.backgroundColor}};" ng-repeat="module in boxmenu.modules">
+      <a href="{{module.url}}" ng-class="($index === currentIndex) ? 'selected' : '' " style="background-image: url('{{module.backgroundImage}}'); background-color: {{module.backgroundColor}};" ng-repeat="module in boxmenu.modules">
         <koa-icon icon="{{module.icon}}" ng-if="boxmenu.modulescope.showicons" class="icon"></koa-icon>
         <div>{{module.text}}</div>
       </a>
