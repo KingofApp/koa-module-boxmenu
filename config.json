@@ -2,7 +2,7 @@
   "name": "Box Menu",
   "identifier": "boxmenu",
   "type": "A",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "King of App",
   "category": [
     "menu"
@@ -25,8 +25,8 @@
     "es-ES" : "Menú desplegable de botones grandes"
   },
   "documentation": {
-    "en-US" : "",
-    "es-ES" : ""
+    "es-ES": "modules/boxmenu/documentation/es_ES.md",
+    "en-US": "modules/boxmenu/documentation/en_US.md"
   },
   "images" : {
     "list" : "modules/boxmenu/images/boxmenu_list.png",
