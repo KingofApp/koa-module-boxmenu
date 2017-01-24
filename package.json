@@ -1,6 +1,6 @@
 {
   "name": "koapp-module-boxmenu",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "dropdown large buttons",
   "directories": {
     "test": "test"
