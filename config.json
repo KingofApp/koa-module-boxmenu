@@ -2,7 +2,7 @@
   "name": "Box Menu",
   "identifier": "boxmenu",
   "type": "A",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "author": "King of App",
   "category": [
     "menu"
@@ -17,12 +17,12 @@
   "canContain": true,
   "icon": "menu",
   "description": {
-    "en-US" : "Menu displayed from the bottom of the App showing the contents boxy. It incorporates a header with logo and name (optional).",
-    "es-ES" : "Menú que se despliega desde la parte inferior de la App mostrando los contenidos en forma de caja. Incorpora cabecera con logo y nombre (opcional)."
+    "en-US" : "Give your app a more interactive touch by using this drop-down menu that groups content into the shape of a box. Incorporate the optional header with the logo and the name of your brand to give a complete look to your design.",
+    "es-ES" : "Da un toque más interactivo a tu app, utilizando este menú despegable que agrupa el contenido en forma de caja. Incorpora la cabecera opcional con tu logo y nombre para dar un look completo a tu diseño."
   },
   "descriptionShort": {
-    "en-US" : "dropdown large buttons",
-    "es-ES" : "Menú desplegable de botones grandes"
+    "en-US" : "Give your app a more interactive touch by using this drop-down menu.",
+    "es-ES" : "Da un toque más interactivo a tu app activando este menú despegable."
   },
   "documentation": {
     "es-ES": "modules/boxmenu/documentation/es_ES.md",
