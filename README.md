@@ -1,5 +1,5 @@
 ### Details:
 
 - Author: King of app
-- Version: 1.0.12
+- Version: 1.0.13
 - Homepage:
